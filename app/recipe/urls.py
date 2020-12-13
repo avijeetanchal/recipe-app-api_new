@@ -6,6 +6,7 @@ from recipe import views
 router = DefaultRouter() # automatically create URI for different API
 router.register('tags', views.TagViewSet)
 router.register('ingredients', views.IngredientViewSet)
+router.register('recipes', views.RecipeViewSet)
 
 app_name = 'recipe' # we define the app name so that the reverse function can look for correct
 # urls
